@@ -9,17 +9,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>CSC281: Introduction to Computer Science II</title>
+    <title>CSC208: Introduction to Computer Science II</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Arvo|Montserrat" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- <link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+
     <link rel="stylesheet" type="text/css" href="updated-styles.css">
     <style type="text/css">
     table {
@@ -42,6 +46,10 @@
         border: 1px solid black;
     }
 
+    .week-header {
+        background-color: #eeeeee;
+    }
+
     @media screen and (max-width: 700px)
     /* Mobile */
 
@@ -52,29 +60,29 @@
     }
     </style>
 </head>
-<div class="container">
+<body>
+<div class="container" style="text-align: center">
     <div class="page-header">
-        <img class = "img-responsive" style="background:none; border:none;" src="thumbnail.png" alt="" />
-        <h1><center>Introduction to Computer Science II <br><small>[CSC 281 - Fall 2019]</small></center></h1>
+        <img class = "img-responsive" style="background:none; border:none;" width="100%" src="thumbnail.png" alt="" />
+        <h1>Introduction to Computer Science II <br><small>[CSC 208 - Fall 2020]</small></h1>
     </div>
 </div>
 <div class="container">
-    <center>
-        <h3>General Course Info</h3></center>
+        <h3 style="text-align: center">General Course Info</h3>
     <br>
     <div class="row">
         <div class="col-sm-4">
-            <ul class="list-group">
-                <li class="list-group-item"><b>Instructor:</b><br> Alex Godwin <small>[godwin (at) american.edu]</small></li>
-                <li class="list-group-item"><b>First Class:</b><br> Tue, Aug 27</li>
-                <li class="list-group-item"><b>Time/ Location:</b><br> T/F 4:05-5:20pm, Loc: DMTI 215</li>
-                <li class="list-group-item"><b>Office Hours:</b><br> W 3-5pm <br> F 10am-12pm <br> DMTI 112C</li>
-                <li class="list-group-item"><b>TA:</b> Emily Jacobson <small>[ej1506a (at) student.american.edu]</small></li>
-                <li class="list-group-item"><b>TA Office Hours:</b> M 12-1:30pm<br> Th 5:30-7pm</li>
-            </ul>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><b>Instructor:</b><br>Alex Godwin <small>[godwin@american.edu]</small></li>
+                    <li class="list-group-item"><b>First Class:</b><br> 08/25/2020</li>
+                    <li class="list-group-item"><b>Location:</b><br>Hybrid: Online and In-person</li>
+                    <li class="list-group-item"><b>Office Hours:</b><br>TBD <br> Location: DMTI 112E</li>
+                </ul>
+            </div>
         </div>
         <div class="col-sm-8">
-            <p>This course is a continuation of problem solving and object-oriented programming. There will be more emphasis on larger programs built from modules. You will be introduced to abstract data structures: stacks, queues, graphs, and trees and their implementations and associated algorithms. We will discuss elementary numerical methods and the construction of a simple graphical user interface (GUI).</p>
+            <p>Students develop programming skills that serve as a foundation for further study in computer science. They learn object-oriented programming and design software that models real-world systems from our networked world and gain an appreciation for the role of algorithms and data structures in problem-solving and software design (e.g., objected-oriented design, lists, files, searching, and sorting). Elementary numerical methods and the construction of a simple graphical user interface (GUI) are also discussed. AU Core Integrative Requirement: Quantitative Literacy II. Usually Offered: fall and spring. Prerequisite: CSC-148 and completion of Quantitative Literacy I requirement.</p>
             <p>In this class, you will learn about:</p>
             <dl>
                 <dt>Software Development Fundamentals</dt>
@@ -95,18 +103,15 @@
                 <li>Draw appropriate insights from the application of a quantitative framework.</li>
                 <li>Explain quantitative reasoning and insights using appropriate forms of representation so that others could replicate the findings.</li>
             </ol>
-            <p><b>Academic integrity:</b> Unless explicitly stated otherwise, you are expected to do your assignments and work collaboratively with your assigned teammate(s), but not share code with other teams in the class. It is not appropriate to find existing code, modify it and submit it as your own work. Code submitted for projects may be compared to existing databases of example student work to verify authenticity. Exams and quizzes will be an independent effort. If in doubt, confer with your instructor.</p>
-            <p>All students are expected to adhere to the <a href='https://www.american.edu/academics/integrity/code.cfm'>American University Honor Code. </a> </p>
         </div>
     </div>
 </div>
 <div class="container">
     <div class="panel panel-default">
         <!-- Default panel contents -->
-        <a name="overview"></a>
-        <div class="panel-heading">
-            <center>
-                <h3>Course Schedule</h3></center>
+<!--        <a name="overview"></a>-->
+        <div class="panel-heading" style="text-align: center">
+                <h3>Course Schedule</h3>
         </div>
         <div class="panel-body">
             <p>Readings should be completed <strong>before</strong> each lecture. </p>
@@ -118,60 +123,54 @@
                     <th>Date</th>
                     <th>Topic</th>
                     <th>Reading</th>
-                    <th>Assignments</th>
+                    <th>Deadlines</th>
                 </tr>
             </thead>
             <tbody>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 1</td>
                 </tr>
                 <tr>
-                    <td>Aug 27</td>
-                    <td>Introduction, Variables, Expressions, Git</td>
-                    <td>1.1-1.10, 2.1-2.10</td>
+                    <td>Aug 25</td>
+                    <td>Introduction</td>
+                    <td>1</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Aug 30</td>
-                    <td>Expressions II, Classes, String</td>
-                    <td>2.11-2.18, 4.3-4.5</td>
-                    <td><span class="label label-warning">Project 0</span></td>
+                    <td>Aug 28</td>
+                    <td>Elementary Programming</td>
+                    <td>2</td>
+                    <td></td>
                 </tr>
-                <!-- <tr>
-                    <td>Aug 30</td>
-                    <td></td>
-                    <td></td>
-                    <td><span class="label label-warning">Project 0</span></td>
-                </tr> -->
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 2</td>
                 </tr>
                 <tr>
-                    <td>Sep 3</td>
-                    <td>Input, Output, Conditionals</td>
-                    <td>2.3, 4.6, 3.1-3.9</td>
+                    <td>Aug 31</td>
+                    <td>Selections</td>
+                    <td>3</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Sep 6</td>
-                    <td>Switch, Iteration</td>
-                    <td>3.10-3.15, 5</td>
-                    <td></td>
+                    <td>Sep 4</td>
+                    <td>Mathematical functions, Characters, and Strings</td>
+                    <td>4</td>
+                    <td>Project 1</td>
                 </tr>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 3</td>
                 </tr>
                 <tr>
-                    <td>Sep 10</td>
-                    <td>Random, Math, Arrays I</td>
-                    <td>9.6.2, 4.1-4.2, 7</td>
+                    <td>Sep 8</td>
+                    <td>Loops</td>
+                    <td>5</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Sep 13</td>
-                    <td>Arrays II, Static Methods</td>
-                    <td>8, 6.1-6.10</td>
-                    <td><span class="label label-warning">Project 1</span></td>
+                    <td>Sep 11</td>
+                    <td>Methods</td>
+                    <td>6</td>
+                    <td></td>
                 </tr>
                 <!-- <tr>
                     <td>Sep 13</td>
@@ -179,212 +178,192 @@
                     <td></td>
                     <td><span class="label label-warning">Project 1</span></td>
                 </tr> -->
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 4</td>
                 </tr>
                 <tr>
-                    <td>Sep 17</td>
-                    <td>Classes, Instance Data, Methods</td>
-                    <td>9.1-9.6</td>
+                    <td>Sep 15</td>
+                    <td>Single-Dimensional Arrays</td>
+                    <td>7</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Sep 20</td>
-                    <td><span class="label label-danger">Exam 1</span></td>
-                    <td></td>
-                    <td></td>
+                    <td>Sep 18</td>
+                    <td>Multidimensional Arrays</td>
+                    <td>8</td>
+                    <td>Project 2</td>
                 </tr>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 5</td>
                 </tr>
                 <tr>
-                    <td>Sep 24</td>
-                    <td>Classes, encapsulation, constructors, Git II</td>
-                    <td>9.8-9.14</td>
+                    <td>Sep 22</td>
+                    <td><strong>Midterm Exam 1</strong> </td>
+                    <td></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Sep 27</td>
-                    <td>Static variables & Methods, Wrapper classes, Class Design</td>
-                    <td>9.7, 10.1-10.8</td>
+                    <td>Sep 25</td>
+                    <td>Objects and Classes</td>
+                    <td>9</td>
                     <td></td>
                 </tr>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 6</td>
                 </tr>
                 <tr>
-                    <td>Oct 1</td>
-                    <td>Packages, Javadoc, Software Development, Testing, Debugging, IDEs</td>
-                    <td>2.16, 6.11, 3.16</td>
+                    <td>Sep 29</td>
+                    <td>Thinking in Objects</td>
+                    <td>10</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Oct 4</td>
-                    <td>Inheritance, Overriding, Class and Object Design</td>
-                    <td>11.1-11.6, 11.9, 11.14</td>
+                    <td>Oct 2</td>
+                    <td>Inheritance and Polymorphism</td>
+                    <td>11</td>
                     <td></td>
                 </tr>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 7</td>
                 </tr>
                 <tr>
-                    <td>Oct 8</td>
-                    <td>Equals, Hierarchies, Abstract Class</td>
-                    <td>11.10, 11.15, 13.1-13.4, 13.10</td>
-                    <td></td>
+                    <td>Oct 6</td>
+                    <td>Exception Handling and Text I/O</td>
+                    <td>12</td>
+                    <td>Project 3</td>
                 </tr>
-                <!-- <tr>
-                    <td>Oct 10</td>
-                    <td></td>
-                    <td></td>
-                    <td><span class="label label-warning">Project 2</span></td>
-                </tr> -->
                  <tr>
-                    <td>Oct 11</td>
-                    <td><span class="label label-success">No Class: Fall Break</span></td>
+                    <td>Oct 9</td>
+                    <td><strong>No Class: Fall Break</strong> </td>
                     <td></td>
                     <td></td>
                 </tr>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 8</td>
                 </tr>
                 <tr>
-                    <td>Oct 15</td>
-                    <td>Polymorphism, Dynamic Binding, ArrayList, Interfaces</td>
-                    <td>11.7-11.8, 11.11-11.12, 13.5-13.6</td>
-                    <td><span class="label label-warning">Project 2</span></td>
+                    <td>Oct 13</td>
+                    <td>Abstract Classes and Interfaces</td>
+                    <td>13</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>Oct 18</td>
-                    <td>Generics, Exceptions</td>
-                    <td>19.1-19.5, 12.1-12.9</td>
+                    <td>Oct 16</td>
+                    <td>Recursion</td>
+                    <td>18</td>
                     <td></td>
                 </tr>
-                <!-- <tr bgcolor="#eeeeee">
-                    <td colspan="4">Week 9</td>
-                </tr> -->
-                <!-- <tr>
-                    <td></td>
-                    <td colspan="3">Spring Break</td>
-                </tr> -->
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 9</td>
                 </tr>
                 <tr>
-                    <td>Oct 22</td>
-                    <td><span class="label label-danger">Exam 2</span></td>
-                    <td></td>
+                    <td>Oct 20</td>
+                    <td>Developing Efficient Algorithms</td>
+                    <td>22</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Oct 25</td>
-                    <td>Recursion, File I/O<br><span class="label label-info">Guest Lecture</span></td>
-                    <td>18, 12.10-12.13</td>
+                    <td>Oct 23</td>
+                    <td>Sorting</td>
+                    <td>23</td>
                     <td></td>
                 </tr>
-
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 10</td>
                 </tr>
                 <tr>
-                    <td>Oct 29</td>
-                    <td>Asymptotics, searching, sorting</td>
-                    <td>22.1-22.4, 23.1-3</td>
-                    <td></td>
+                    <td>Oct 27</td>
+                    <td>Sorting II </td>
+                    <td>Review</td>
+                    <td>Project 4</td>
                 </tr>
                 <tr>
-                    <td>Nov 1</td>
-                    <td>Sorting Efficiently</td>
-                    <td>23.4-23.6</td>
+                    <td>Oct 30</td>
+                    <td><strong>Midterm Exam II</strong></td>
+                    <td></td>
                     <td></td>
                 </tr>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 11</td>
                 </tr>
                 <tr>
-                    <td>Nov 5</td>
+                    <td>Nov 3</td>
                     <td>JavaFX I</td>
-                    <td>14.1-14.11</td>
+                    <td>14</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Nov 8</td>
+                    <td>Nov 6</td>
                     <td>JavaFX II</td>
-                    <td>15.1-15.12</td>
-                    <td><span class="label label-warning">Project 3</span></td>
+                    <td>15</td>
+                    <td></td>
                 </tr>
-                <!-- <tr>
-                    <td>Nov 8</td>
-                    <td></td>
-                    <td></td>
-                    <td><span class="label label-warning">Project 3</span></td>
-                </tr> -->
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 12</td>
                 </tr>
                 <tr>
-                    <td>Nov 12</td>
+                    <td>Nov 10</td>
                     <td>JavaFX III</td>
                     <td>16</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Nov 15</td>
-                    <td><span class="label label-danger">Exam 3</span></td>
-                    <td></td>
-                    <td></td>
+                    <td>Nov 13</td>
+                    <td><span class="label label-danger">JavaFX IV</span></td>
+                    <td>Review</td>
+                    <td>Project 5</td>
                 </tr>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 13</td>
                 </tr>
                 <tr>
-                    <td>Nov 19</td>
-                    <td>Linked Lists</td>
-                    <td>24.1-24.4</td>
+                    <td>Nov 17</td>
+                    <td>Generics</td>
+                    <td>19</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Nov 22</td>
-                    <td>Collections</td>
-                    <td>20.1-20.4, 21.1-21.5</td>
+                    <td>Nov 20</td>
+                    <td>Lists, Stacks, Queues</td>
+                    <td>20</td>
                     <td></td>
                 </tr>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 14</td>
                 </tr>
                 <tr>
-                    <td>Nov 26</td>
-                    <td>Hashing</td>
-                    <td>27.1-27.6</td>
+                    <td>Nov 24</td>
+                    <td>Sets and Maps</td>
+                    <td>22</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Nov 29</td>
+                    <td>Nov 27</td>
                     <td><span class="label label-success">No Class: Thanksgiving Break</span></td>
                     <td></td>
                     <td></td>
                 </tr>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 15</td>
                 </tr>
                 <tr>
-                    <td>Dec 3</td>
-                    <td>Trees</td>
-                    <td>25.1-25.6, 26.1-26.2</td>
+                    <td>Dec 1</td>
+                    <td>Binary Search Trees</td>
+                    <td>25</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Dec 6</td>
-                    <td>Graphs</td>
-                    <td>28.1-28.9, 29.4-29.5</td>
-                    <td><span class="label label-warning">Project 4</span></td>
+                    <td>Dec 4</td>
+                    <td>Hashing</td>
+                    <td>27</td>
+                    <td>Project 6</td>
                 </tr>
-                <tr bgcolor="#eeeeee">
+                <tr class="week-header">
                     <td colspan="4">Week 16</td>
                 </tr>
                 <tr>
-                    <td>Fri, Dec 13</td>
-                    <td>02:30PM-05:00PM</td>
+                    <td>Date ?</td>
+                    <td>?</td>
                     <td colspan="3"><span class="label label-danger">Final Exam</span></td>
                 </tr>
 
@@ -401,14 +380,19 @@
         <div class="col-sm-6">
             <h3>Required Textbook</h3>
             <div class="row">
-                <div class="col-xs-3"><img class="img-responsive bookCover" src="intro11eComprehensive.jpg" width="200" alt="" /></div>
+                <div class="col-xs-3"><img class="img-responsive bookCover" src="intro12eComprehensive.jpg" width="150px" alt="" /></div>
                 <div class="col-sm-8">
-                    <br><strong>Title: </strong>Introduction to Java Programming and Data Structures, 11th Ed.
+                    <strong>Title: </strong>Introduction to Java Programming and Data Structures, Comprehensive 12th Ed.
                     <br><strong>Author: </strong>Y. Daniel Liang
-                    <br><strong>Link: </strong><a href="http://www.mypearsonstore.com/bookstore/introduction-to-java-programming-and-data-structures-9780134670942?xid=PSED">Pearson</a>, <a href="https://smile.amazon.com/Introduction-Programming-Structures-Comprehensive-Version/dp/0134670949/">Amazon</a>
-                    <br><strong>Other:</strong> <a href="https://media.pearsoncmg.com/bc/abp/cs-resources/products/product.html#product,isbn=0134670949">Resources</a>
+                    <br><strong>Link: </strong><a href="https://www.pearson.com/store/p/introduction-to-java-programming-and-data-structures-comprehensive-version/P100002776386/9780136520153">Pearson</a>, <a href="https://smile.amazon.com/Introduction-Programming-Structures-Comprehensive-Version/dp/0136520154/">Amazon</a>
+                    <p><strong>Note:</strong> In this course, we do not use the Pearson MyLab Programming Software. There are many editions of the required text that include this software in the price. Wherever you get the text, make sure that you are not paying extra for things that you will not use. New for this course is the option to buy a loose-leaf version of the textbook at a reduced price. If you go this route, you will need to obtain a fairly large binder in which to store the pages of this hefty tome. Also, ensure that you are purchasing the comprehensive edition. Previous editions may be used, though there are differences in the language over time that may trip you up. Whatever numbered edition you obtain for this course, ensure that you are using the <strong>Comprehensive Edition</strong>.</p>
                 </div>
             </div>
+<!--            <div class="row">-->
+<!--                <div class="col-sm-12">-->
+
+<!--                </div>-->
+<!--            </div>-->
             <h3>Grading</h3>
             <table class="table table-hover">
                 <tr>
@@ -416,53 +400,49 @@
                     <th>Weight</th>
                 </tr>
                 <tr>
-                    <td>Attendance and Participation (10 ea.)</td>
-                    <td>20%</td>
+                    <td>Attendance and Participation</td>
+                    <td>10%</td>
                 </tr>
                 <tr>
                     <td>HW Projects</td>
                     <td>30%</td>
                 </tr>
                 <tr>
-                    <td>Regular Exams (10 ea.)</td>
+                    <td>Midterm Exams (2x 15 ea.)</td>
                     <td>30%</td>
                 </tr>
                 <tr>
                     <td>Final Exam (cumulative: half old, half new)</td>
-                    <td>20%</td>
+                    <td>30%</td>
                 </tr>
             </table>
 
-
             <h3> Class Participation </h3>
-            <p>It is expected that students will come to class, be prepared by doing the readings, and will pay attention and participate in discussions. Participation is scored by evaluation of in-class activities and your responses to in-class quizzes.<!-- Participation will be scored both by instructor review of the quality of work during in-class exercises and peer-assessment of your contributions to the group. --></p>
+            <p>It is expected that students will come to class, be prepared by doing the readings, and will pay attention and participate in discussions. Participation is scored by evaluation of in-class activities and your responses to in-class quizzes.</p>
             <p>Any questions regarding general rules and regulations should first be directed to the American University <a target="_blank" href="https://www.american.edu/provost/registrar/university_catalog.cfm">Catalog</a>. If you still have questions, please seek out the TA or Instructor during the posted office hours.</p>
             <h4>Use of Computers and Cell Phones in Class</h4>
+            <p>If you have a laptop, you should bring it to class. Throughout the semester we will frequently pause lecture to work together to solve programming challenges in groups. However, it is recommended that you take notes on paper.</p>
             <p><a href="http://pss.sagepub.com/content/early/2014/04/22/0956797614524581.abstract">Educational research</a> shows that taking notes by hand on paper will lead to better retention of material than taking notes by typing. Also, in the past classrooms have had issues with students not only not paying attention but also disrupting others during class-- by playing games, by accidentally clicking on a video with the sound on, etc.</p>
-            <p>If you have a laptop, you should bring it to class. Do not use it for in-class assignments unless you are directly advised to do so by the instructor. Throughout the semester we will frequently pause lecture to work together to solve programming challenges in groups.</p>
             <p>Please do not use your cell phone in class.</p>
             <h3>Homework Projects</h3>
-            <p>Homeworks will be graded on a rubric of criteria (specified on the assignment) such as accuracy of code input/output, completeness, runtime errors, comments, etc. For each criterion, you will receive either a check plus, check, or check minus. Most criterion will receive a check. A plus means "you impressed me." A minus means the assignment is incomplete, incorrect, or sloppy in some fashion with respect to that criterion. Pluses and minuses are combined to give your grade for the assignment. For most assignments, you start out half way between a B+ and A-. One plus makes it an A-; one minus makes it a B+. A project receiving minuses for all criteria will receive about 75% of credit, and a project that receives an X for all criteria will receive about 50% of credit or less. These are general guidelines to let you know what to expect. Grading on specific assignments may differ.</p>
+            <p>Homework will be graded on a rubric of tasks that are expected to work correctly (e.g., returning the correct output for a given input). For each task, you will receive either a check plus, check, or check minus. Most tasks will receive a check. A check plus means "you impressed me", and is typically achieved by checking for faulty input, elegant design, good comments, and/or a surprising approach. A check minus means the assignment is incomplete, incorrect, or sloppy in some way. Pluses and minuses are combined to give your grade for the assignment. A project receiving all check pluses will receive 100% of credit, while a project receiving all checks will receive a 90%. A project receiving minuses for all tasks will receive about 75% of credit, and a project that receives an X for all tasks will receive about 50% of credit or less. Tasks may be weighted differently to account for differences in difficulty or time. These are general guidelines to let you know what to expect. Grading on specific assignments may differ.</p>
             <p>Project submissions that fail to compile will not be accepted under any circumstances.</p>
-            <p>All assignments will be submitted through the class Github system, which will be introduced in early lectures. Students are encouraged, but not required, to work in pairs (no groups larger than two people). Only Project 0 must be completed individually. For other projects, the class Github will be set up to accommodate teamwork. Note, however, that students working together must equally contribute to the project. Project submissions will be reviewed to ensure balanced contribution for paired submissions - grades will be scaled accordingly in situations where one student did all the work.</p>
-            <p>Even though we encourage collaboration with a partner, sharing code between groups is strictly forbidden - this is a form of plagiarism. If you directly copy and paste code from the Internet or the text, cite your source in your comments (but also ensure that you understand what the code is doing - not all code on the web is good!). </p>
+            <p>All assignments will be submitted through the class Github system, which will be introduced in early lectures. Students are allowed to work in pairs (no groups larger than two people) but you must specify who you worked with and it must be clear that both students contributed (you will identify who did what in your submission). Students working together must equally contribute to the projects. Project submissions will be reviewed to ensure balanced contribution for paired submissions - grades will be scaled in situations where it becomes clear that one student did all the work.</p>
             <h4>Late Submission</h4>
-            <p>Assignments are due at 8pm on the specified date unless stated otherwise. There is a grace period until midnight. Assignments turned in after midnight will be penalized with a letter grade (10%) for each 24 hour period after the initial 8pm deadline. Submissions that do not compile will not be accepted. Projects are much larger than the homeworks assigned in the previous course, and students are given multiple weeks to complete them. Waiting until the last minute is a recipe for disaster - if you are stuck early, come to office hours for the instructor or TA ASAP to get unstuck!</p>
+            <p>Assignments are due at exactly 11:59pm on the specified date unless stated otherwise. Assignments turned in after midnight will be penalized with a letter grade (10%) for each 24 hour period after the initial 8pm deadline. Submissions received 72 hours after the deadline will not be accepted. Submissions that do not compile will not be accepted. Projects are larger than the homework assigned in the previous course, and students are given multiple weeks to complete them. Waiting until the last minute is a recipe for disaster - if you are stuck early, come to office hours for the instructor or TA ASAP to get unstuck!</p>
             <p>Throughout the semester you have two "grace" days that can be used to mitigate the penalty of a late assignment submission. These are applied automatically.</p>
         </div>
         <div class="col-sm-6">
+            <h3>Academic Integrity</h3>
+            <p>Even though we encourage collaboration with a partner, sharing code between groups is strictly forbidden - this is a form of plagiarism. As is showing your work to other students, even just for a second. There is rarely one single correct way to write code that solves a problem. While we want you to feel free to discuss your approach freely with a partner, you should know that there are often many solutions for a given problem and it's typically obvious when one student shares code with another. If you directly copy and paste code from the Internet (or even the text), cite your source in your comments (but also ensure that you understand what the code is doing - not all code on the web is good!). Assignments will be checked using plagiarism detection software and by hand to ensure the originality of the work. </p>
+            <p>Do not share your code with anyone other than a partner. Do not let someone look at your screen. You may get behind, or your friend may ask for help, but the consequences for plagiarism are far worse than an incomplete submission - for the submission, you will still likely get some points. If I suspect that you have purposely shared code with another student or presented someone else's work as your own, the matter will be referred to the Academic Integrity Code Administrator for adjudication. If you are found responsible for an academic integrity violation, sanctions can include a failing grade for the course, suspension for one or more academic terms, dismissal from the university, or other measures as deemed appropriate by the Dean. </p>
+            <p>All students are expected to adhere to the <a href='https://www.american.edu/academics/integrity/code.cfm'>American University Honor Code. </a> If you have a question about whether or not something is permissible, ask the instructor or the TA first.</p>
             <h3>Attendance</h3>
             <p>Students are required to attend all lectures. If you need to miss class for any reason, you are allowed two excused absences - no questions asked. Prolonged absences must be discussed with the instructor and are not guaranteed to be excused.</p>
-            <p>Students who arrive after the start of class will receive half credit for attendance on that day. Students who arrive after 30 minutes will be counted absent.</p>
+<!--            <p>Students who arrive after the start of class will receive half credit for attendance on that day. Students who arrive after 30 minutes will be counted absent.</p>-->
             <h3>Exams</h3>
             <p>Exams cover the material from the lectures, projects, and reading. While not necessarily cumulative, each exam will require understanding many of the concepts covered in the preceding exams. Exams consist of multiple choice, short answer, and long answer questions. Each exam, except the final, is weighted equally.</p>
-            <p>The final exam is cumulative, and is worth 20% of your total grade for the course. Half of the final exam will be material covered for prior exams, half will be material that is new since the previous exam.</p>
-            <!-- <p><span class="label label-danger">Notice</span> In addition to the total overall class percentage for determining your grade, you must have a passing average (>60 average) on the 3 exams and the final exam all combined together, not each one individually, in order to pass the course. We implement this policy as a check-and-balance with respect to the HWs and our allowance of collaboration on them. Note that this does not mean that you have the option of only using the four exams to determine your grade. All the categories above will be used in the grade calculation, but in addition, you must have a passing grade on just the four exams in order to pass the course.</p>
-            <p>Exams are typically curved based on class performance. </p> -->
-            <p>After you are handed back your graded exam, you will have an opportunity to return it with corrections for partial credit on missed questions.</p>
-            <!-- <h3>Quizzes</h3>
-            <p>A short five-minute quiz is administered at the beginning of each lecture. Each quiz consists of two questions from the previous lecture or reading. You have the option of answering either question to receive full credit.</p>
-            <p>Students begin the semester with a 100 quiz score. For each daily quiz in which they are not able to answer either question, this score will be reduced by -3. On any day that a student successfully answers both of the quiz questions, the score will be increased by 3 points. If you have a 100 already, and can successfully answer both questions, you can effectively "bank" the +3 for a later day in which you are unable to complete the quiz.</p> -->
+            <p>The final exam is cumulative: half of the final exam will be material covered for prior exams, half will be material that is new since the previous exam.</p>
             <h3>Letter Grades</h3>
             <table class="table table-hover">
                 <tr>
@@ -510,12 +490,14 @@
                     <td>F</td>
                 </tr>
             </table>
+            <h3>Software Tools</h3>
+            <p>In this course you will utilize an Integrated Development Environments (IDEs) to write code. While many IDEs exist, examples and in-class support videos will utilize IntelliJ IDEA by JetBrains (<a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a>). It is freely available to students through an academic license and supports all of the software development features that we will use in this course. Students who have used PyCharm, also by JetBrains, will find this IDE quite familiar.</p>
             <h3>Students with Disabilities</h3>
             <p>If you wish to receive accommodations for a disability, please notify me with a letter from the Academic Support and Access Center. As accommodations are not retroactive, timely notification at the beginning of the semester, if possible, is strongly recommended. To register with a disability or for questions about disability accommodations, contact the Academic Support and Access Center at 202-885-3360 or asac@american.edu, or drop by the ASAC in MGC 243.</p>
             <h3>Academic Support</h3>
             <p>All students may take advantage of the Academic Support and Access Center (ASAC) for individual academic skills counseling, workshops, Tutoring, peer tutor referrals, and Supplemental Instruction. The ASAC is located in Mary Graydon Center 243.  Additional academic support resources available at AU include the Bender Library, the Writing Center (located in the Library), the Math Lab (located in Don Meyers Technology and Innovation Building), and the Center for Language Exploration, Acquisition, & Research (CLEAR) in Anderson Hall. A more complete list of campus-wide resources is available in the ASAC.</p>
             <h3>Tutoring</h3>
-            <p>The Quantitative Academic Support program provides drop-in and one-on-one tutoring for CSC 121, 280, and 281. Tutors help students learn course concepts, develop study strategies, complete assignments, and study for exams. Tutors may not be able to help with all problems; students must consult with the course instructor for additional assistance.</p>
+            <p>The Quantitative Academic Support program provides drop-in and one-on-one tutoring for CSC 121, 148, and 208. Tutors help students learn course concepts, develop study strategies, complete assignments, and study for exams. Tutors may not be able to help with all problems; students must consult with the course instructor for additional assistance.</p>
             <p> Drop-in assistance is available in DMTI 207 (hours TBD). One-on-one appointments can be scheduled at american.mywconline.net (choose Quant Support). Tutoring begins the third week of classes and ends the last day of classes. Email <a href="mailto:quantsupport@american.edu">quantsupport@american.edu</a> with questions.
 </p>
         </div>
@@ -523,8 +505,6 @@
     <div>
         <h3>Acknowledgments</h3> Course design by Alex Godwin at American University. Assignments and ideas on this syllabus build from the work of many other instructors in computing, especially Donna Dietz and Adam Knapp at American University,  John Stasko at the Georgia Institute of Technology, and Dave Reed at Creighton University. This course utilizes in-class POGIL materials that builds on the work of Clif Kussmaul at Muhlenberg College and Tammy VanDeGrift at the University of Portland.
     </div>
-</div>
-</div>
 </div>
 <br>
 <!-- Bootstrap core JavaScript
