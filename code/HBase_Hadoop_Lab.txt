@@ -3,7 +3,11 @@ SQOOP DATA IMPORT
 ——————————————————————————————————————————
 mysql -uroot -pcloudera
 
-show databases;
+SHOW DATABASES;
+
+CREATE DATABASE logdata;
+
+USE logdata;
 
 CREATE TABLE weblogs (ipyear  varchar(255) NOT NULL PRIMARY KEY, january int(11) DEFAULT NULL, february int(11) DEFAULT NULL,   march int(11) DEFAULT NULL, april int(11) DEFAULT NULL, may int(11) DEFAULT NULL, june int(11) DEFAULT NULL, july int(11) DEFAULT NULL, august int(11) DEFAULT NULL, september int(11) DEFAULT NULL, october int(11) DEFAULT NULL, november int(11) DEFAULT NULL, december int(11) DEFAULT NULL);
 
